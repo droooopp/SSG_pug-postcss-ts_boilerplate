@@ -1,0 +1,34 @@
+extends ../../components/layout/index
+
+include ../../components/mixin/head/index
+
+block templateConfig
+  -
+    var templateJsonLdData = [
+      {
+        text: `home`,
+        href: `${config.ecTop}`
+      },
+      {
+        text: `特集`,
+        href: `${config.featureTop}`
+      },
+      {
+        text: config.featureName,
+        href: `${page.url}`
+      }
+    ]
+
+block head
+  +head({
+    title: page.metaTitle,
+    url: page.url,
+    description: page.metaDescription,
+    keywords: page.metaKeyword,
+    path: './'
+  })
+
+block contents
+  include ../../components/home/heading/index
+
+block breadcrumbs

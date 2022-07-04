@@ -1,0 +1,12 @@
+@import "./_root.css";
+@import "./_breakpoints.css";
+@import "./_reset.css";
+@import "./_base.css";
+@import "./_aspectRatio.css";
+@import "./_swiper.css";
+
+@import "./libs/swiper.min.css";
+
+@import "./utilities/_utilities.css";
+
+@import "../components/home/heading/index.css";

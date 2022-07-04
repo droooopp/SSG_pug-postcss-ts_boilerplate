@@ -1,0 +1,43 @@
+body {
+  font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', Verdana, Helvetica, Tahoma, Arial, sans-serif !important;
+  color: var(--color-black);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+#container {
+  font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', Verdana, Helvetica, Tahoma, Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  padding-top: 50px;
+
+  @media screen and (--pc-viewpoint) {
+    padding-top: 70px;
+  }
+
+  .-home & {
+    padding-top: 0;
+  }
+}
+
+[data-animation-is-active="true"] {
+  .wrapper {
+    width: 100vw;
+    overflow-y: scroll;
+  }
+}
+
+[data-animation-is-active="false"] {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+.lazyload,
+.lazyloading {
+  opacity: 0;
+}
+
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 1s;
+}

@@ -1,0 +1,26 @@
+:root {
+  @each $key, $value in (white, gray700, gray350, gray150, gray100, gray050, black, blue, yellow, gold, orange, red), (#ffffff, #5a5a5a, #ababab, #dadada, #e8e8e8, #f4f4f4, #1f1f1f, #12288b, #fff000, #cb9f33, #ffcd78, #ff5050) {
+    --color-$(key): $(value);
+  }
+
+  @each $key, $value in (xxs, xs, s, m, l, xl, xxl), (5, 10, 15, 20, 30, 60, 90) {
+    --space-v-$(key): $(value)px;
+  }
+
+  @each $key, $value in (xxs, xs, s, m, l, xl), (1px, 3px, 5px, 9px, 15px, 30px) {
+    --sp-h-$(key): $(value);
+    --sp-h-$(key)-negative: -$(value);
+  }
+
+  @each $key, $value in (xxs, xs, s, m, l, xl, xxl), (1px, 5px, 10px, 15px, 20px, 40px, 60px) {
+    --pc-h-$(key): $(value);
+  }
+
+  @each $key, $value in (slow, normal, fast), (0.8s, 0.6s, 0.4s) {
+    --hover-transition-$(key): $(value);
+  }
+
+  @each $key, $value in (light, dark), (#fdecf5, #ea6182) {
+    --feature-color-$(key): $(value);
+  }
+}

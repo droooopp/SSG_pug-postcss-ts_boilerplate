@@ -1,0 +1,19 @@
+block templateConfig
+
+doctype html
+html(lang=config.lang)
+  head
+    block head
+
+  body
+    include ../common/noScript/index
+    .wrapper
+      #container
+        #content-body
+
+          main
+            block contents
+
+          aside.l-aside
+
+          block breadcrumbs

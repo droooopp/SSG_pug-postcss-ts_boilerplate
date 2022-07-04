@@ -1,0 +1,2 @@
+@custom-media --pc-viewpoint (min-width: 813px);
+@custom-media --sp-viewpoint (max-width: 812px);

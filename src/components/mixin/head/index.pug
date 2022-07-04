@@ -1,0 +1,33 @@
+mixin head({title, url, description, keywords, path})
+  meta(charset="utf-8")
+  meta(name="robots", content="index,follow")
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  meta(http-equiv="X-UA-Compatible", content="IE=edge")
+  meta(name="format-detection", content="telephone=no")
+
+  title!=title
+
+  meta(name="description", content=description)
+  meta(name="keywords", content=keywords)
+  meta(name="apple-mobile-web-app-title", content=config.meta.site_name)
+  meta(name="p:domain_verify", content=config.meta.pinterest)
+
+  meta(property="fb:app_id", content=config.og.id)
+  meta(property="og:type", content=config.og.type)
+  meta(property="og:site_name", content=config.og.site_name)
+  meta(property="og:title", content=title)
+  meta(property="og:description", content=description)
+  meta(property="og:url", content=url)
+  meta(property="og:image", content=config.og.image)
+
+  link(rel="preconnect", href="https://www.googletagmanager.com/", crossorigin)
+  link(rel="preconnect", href="https://www.google-analytics.com", crossorigin)
+  link(rel="preconnect", href="https://googleads.g.doubleclick.net", crossorigin)
+  link(rel="preconnect", href="https://www.google.co.jp", crossorigin)
+  link(rel="preconnect", href="https://www.google.com/", crossorigin)
+
+  link(rel="canonical", href=url)
+  link(rel="icon", sizes="16x16 32x32 64x64", href="https://www.domain.com//ico.png")
+
+  link(rel="stylesheet", href=`${path}css/app.css?${Date.now()}`, media="all")
+  script(src=`${path}js/app.js?${Date.now()}`, defer)

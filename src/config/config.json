@@ -1,0 +1,25 @@
+{
+  "lang": "ja",
+  "homePath": "feature/",
+  "domain": "https://www.domain.com/",
+  "ecTop": "https://www.domain.com/SSG_pug-postcss-ts_boilerplate/",
+  "featureTop": "https://www.domain.com/SSG_pug-postcss-ts_boilerplate/",
+  "featureUrl": "https://www.domain.com/SSG_pug-postcss-ts_boilerplate/feature/",
+  "featureName": "SSG_pug-postcss-ts_boilerplate",
+  "meta": {
+    "site_name": "SSG_pug-postcss-ts_boilerplate",
+    "title": "SSG_pug-postcss-ts_boilerplate",
+    "description" : "sample description sample description sample description sample description",
+    "keywords": "sample,description",
+    "pinterest": "aaaaaaaaaaaaaaaaaa"
+  },
+  "og": {
+    "site_name": "sample description",
+    "id": "aaaaaaaaaaaaaaaaaa",
+    "type": "website",
+    "image": "https://www.domain.com/SSG_pug-postcss-ts_boilerplate/feature/img/common/ogp.jpg"
+  },
+  "lazyInitialImg": "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==",
+  "breakpointSp" : 812,
+  "breakpoint" : 813
+}

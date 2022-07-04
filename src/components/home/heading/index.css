@@ -1,0 +1,22 @@
+.p-heading {
+  margin-top: var(--space-v-xl);
+  margin-bottom: var(--space-v-xl);
+  margin-left: var(--pc-h-m);
+  margin-right: var(--pc-h-m);
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1.35px;
+  font-size: 13px;
+
+  @media screen and (--pc-viewpoint) {
+    width: 100%;
+    max-width: 1160px;
+    padding-top: var(--space-v-l);
+    padding-bottom: var(--space-v-l);
+    padding-left: var(--pc-h-l);
+    padding-right: var(--pc-h-l);
+    margin: 0 auto;
+    position: relative;
+    font-size: 17px;
+  }
+}

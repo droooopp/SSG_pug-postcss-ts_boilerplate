@@ -1,0 +1,13 @@
+{
+  "pages": [
+    {
+      "type": "home",
+      "dist": "feature/",
+      "url": "https://www.domain.com/SSG_pug-postcss-ts_boilerplate/feature/",
+      "metaTitle": "SSG_pug-postcss-ts_boilerplate",
+      "metaDescription": "sample description sample description sample description sample description",
+      "metaKeyword": "sampl, description",
+      "heading": "HEADING TEXT"
+    }
+  ]
+}
