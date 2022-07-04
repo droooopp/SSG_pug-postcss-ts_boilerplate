@@ -1,4 +1,4 @@
-# GU Boilerplate
+# SSG_pug-postcss-ts_boilerplate
 ## Recommended Env
 - node: `10.16.3`
 - npm: `^6.9.0`
